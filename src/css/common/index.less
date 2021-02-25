@@ -1,0 +1,19 @@
+@import "mixins";
+
+.flexbox {
+  .display-flex;
+  .flex-direction(row);
+  .flexbox-item {
+    .box-sizing();
+    .flex(1);
+  }
+}
+
+.flexbox-v {
+  .display-flex;
+  .flex-direction(column);
+  .flexbox-item {
+    .box-sizing();
+    .flex(1);
+  }
+}
