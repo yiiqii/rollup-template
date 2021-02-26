@@ -7,6 +7,7 @@ import { uglify } from 'rollup-plugin-uglify';
 import serve from 'rollup-plugin-serve';
 import postcss from 'rollup-plugin-postcss';
 import htmlTemplate from 'rollup-plugin-generate-html-template';
+import copy from 'rollup-plugin-copy';
 import livereload from 'rollup-plugin-livereload';
 
 const production = process.env.BUILD === 'production';
@@ -47,6 +48,11 @@ const config = {
     })),
     htmlTemplate({
       template: 'www/index.html',
+    }),
+    copy({
+      targets: [
+        { src: 'res', dest: 'dist' },
+      ],
     }),
     // watch html
     ((files) => ({
