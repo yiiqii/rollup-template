@@ -1,11 +1,11 @@
 {
-  "name": "rollup-template",
+  "name": "rollup-web-template",
   "version": "0.0.1",
   "author": "",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yiiqii/rollup-template.git"
+    "url": "https://github.com/yiiqii/rollup-web-template.git"
   },
   "engineStrict": true,
   "engines": {
@@ -30,7 +30,6 @@
     "@babel/eslint-parser": "^7.13.0",
     "@babel/plugin-transform-runtime": "^7.13.7",
     "@babel/preset-env": "^7.13.5",
-    "@babel/runtime-corejs3": "^7.13.6",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
@@ -43,7 +42,7 @@
     "husky": "^2.4.1",
     "less": "^4.1.1",
     "prettier": "~1.18.2",
-    "rollup": "^2.39.1",
+    "rollup": "^2.40.0",
     "rollup-plugin-cleanup": "^3.2.1",
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-copy": "^3.4.0",
